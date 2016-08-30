@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+    box-sizing: border-box;
+}
+
+/* fonts.google.com */
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* https://www.gradient-animator.com */
+.container {
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    padding: 2vh 2vw;
+    background: linear-gradient(139deg, #29d7aa, #73d9bf, #549684, #506761);
+    background-size: 800% 800%;
+    -moz-animation: backgroundAnimation 11s ease infinite;
+    animation: backgroundAnimation 11s ease infinite;
+}
+.container .image {
+    width: 100%;
+    height: 100%;
+    background: url(../img/1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#drawCanvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@-webkit-keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 68%
+    }
+    50% {
+        background-position: 100% 33%
+    }
+    100% {
+        background-position: 0% 68%
+    }
+}
+@-moz-keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 68%
+    }
+    50% {
+        background-position: 100% 33%
+    }
+    100% {
+        background-position: 0% 68%
+    }
+}
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 68%
+    }
+    50% {
+        background-position: 100% 33%
+    }
+    100% {
+        background-position: 0% 68%
+    }
+}
